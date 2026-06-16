@@ -1,2 +1,2 @@
 # sql_for_dataEngg
-Sql for basics to advanced
+Master SQL: A Complete Journey from Fundamentals to Advanced for Data & Analytics Engineering
