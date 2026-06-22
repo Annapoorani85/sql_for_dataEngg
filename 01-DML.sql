@@ -1,13 +1,33 @@
 # SQL Practice Database Setup
 
 ```sql
+
+-- =====================================================
+-- SHOW AVAILABLE DATABASES
+-- =====================================================
+
+SHOW DATABASES;
+
 -- =====================================================
 -- DATABASE CREATION
 -- =====================================================
 
 CREATE DATABASE SQLPractice;
 
--- MySQL Only
+-- =====================================================
+-- VERIFY Created DATABASE
+-- =====================================================
+
+SELECT DATABASE();
+
+-- =====================================================
+-- SHOW ALL TABLES IN CURRENT DATABASE
+-- =====================================================
+
+SHOW TABLES();
+
+
+-- MySQL Only - This tells Which database should I create the tables in?
 USE SQLPractice;
 
 -- =====================================================
@@ -18,6 +38,12 @@ CREATE TABLE Departments (
     DepartmentID INT PRIMARY KEY,
     DepartmentName VARCHAR(50) NOT NULL
 );
+
+-- =====================================================
+-- DESCRIBE TABLE STRUCTURE
+-- =====================================================
+
+DESC Departments;
 
 -- =====================================================
 -- TABLE: Employees
@@ -34,6 +60,28 @@ CREATE TABLE Employees (
         FOREIGN KEY (DepartmentID)
         REFERENCES Departments(DepartmentID)
 );
+
+-- =====================================================
+-- DESCRIBE TABLE STRUCTURE
+-- =====================================================
+
+DESC Employees;
+
+
+-- =====================================================
+-- SHOW ALL TABLES IN CURRENT DATABASE
+-- =====================================================
+
+SHOW TABLES();
+
+
+-- =====================================================
+-- VIEW TABLE DDL
+-- =====================================================
+SHOW CREATE TABLE Employees;
+SHOW CREATE TABLE Departments;
+
+
 
 -- =====================================================
 -- INSERT DEPARTMENTS
@@ -60,6 +108,17 @@ VALUES
 (4, 'Kiran',  30, 80000, 3),
 (5, 'Meena',  20, 55000, 2),
 (6, 'Arjun',  10, 65000, 3);
+
+-- =====================================================
+-- VERIFICATION QUERIES
+-- =====================================================
+
+SELECT *
+FROM Departments;
+
+SELECT *
+FROM Employees;
+
 
 -- =====================================================
 -- SELF REFERENCING FOREIGN KEY
