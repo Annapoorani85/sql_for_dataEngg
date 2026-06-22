@@ -8,6 +8,25 @@ Everything else in SQL (filtering, joins, aggregations, subqueries, optimization
 
 ---
 
+# SQL Filtering, Sorting, and Grouping
+
+## 📚 Table of Contents
+
+| Topic | Description |
+|--------|-------------|
+| [LIMIT](#limit) | Restrict the number of rows returned |
+| [WHERE Clause](#where-clause) | Filter rows using conditions |
+| [LIKE Operator](#like-operator) | Perform pattern matching |
+| [ORDER BY (Sorting)](#order-by-sorting) | Sort query results |
+| [GROUP BY](#group-by) | Group rows for aggregation |
+| [HAVING Clause](#having-clause) | Filter aggregated groups |
+| [Summary](#summary) | Quick recap of concepts |
+| [Interview Questions](#interview-questions) | Common SQL interview questions |
+| [Best Practices](#best-practices) | Recommended SQL coding practices |
+
+---
+
+
 # 1. What is SQL?
 
 **SQL** stands for **Structured Query Language**.
